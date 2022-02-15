@@ -1,0 +1,228 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    background-image: linear-gradient(to right, #000000, #444049);
+    color: rgb(200, 199, 204);
+    font-family: 'Cormorant', serif;
+}
+
+h1 {
+    font-size: 64px;
+    margin: .5rem auto;
+}
+
+a {
+    color: #e8985c;
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+}
+
+.header {
+    padding: 1rem;
+}
+
+.logo-cntr a {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    height: 90vh;
+    width: 75%;
+    min-width: 1000px;
+}
+
+.content-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.color-palettes {
+    margin-right: 18rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 800px;
+    max-width: 900px;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.color-picker-container {
+    height: 325px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.spectrum-label {
+    font-size: 24px;
+    margin: 0 auto 3rem;
+    width: 22rem;
+}
+
+.config {
+    
+    height: 70vh;
+    width: 15rem;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: absolute;
+    right: 10px;
+
+}
+
+.config-content {
+    padding: .5rem;
+}
+
+.custom-bgr-cntr {
+    height: 12rem;
+}
+
+.color-input {
+    width: 100%;
+    height: 7rem;
+    border-style: hidden;
+    border-radius: 8px;
+}
+
+.color-submit {
+    width: 100%;
+    height:3rem;
+    margin-top: .5rem;
+    border-radius: 8px;
+    color:#444049;
+    font-family: "Cormorant", serif;
+    font-size: 18px;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.mute-palette-cntr {
+    text-align: center;
+}
+.mute-palette-btn {
+    width: 100%;
+    height: 7rem;
+    border-width: 5px;
+    border-radius: 8px;
+    font-size: 28px;
+    color: #444049;
+    font-style: italic;
+    cursor: pointer;
+}
+
+
+.cpicker {
+    margin: .75rem;
+}
+
+.control-panel {
+    border: solid;
+    border-radius: 20px;
+    height: 14rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.control-btn {
+    border-radius: 50%;
+    border-width: 0px;
+    width: 3rem;
+    height: 3rem;
+    margin: .25rem;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 0 35px rgb(0, 255, 98), 0 0 25px rgb(0, 255, 98);
+    -moz-box-shadow: inset 0 0 35px rgb(0, 255, 98), 0 0 25px rgb(0, 255, 98);
+    box-shadow: inset 0 0 35px rgb(0, 255, 98), 0 0 25px rgb(0, 255, 98);
+    
+
+}
+
+
+/**************************************************/
+/****** Dark Mode Toggle **************************/
+/**************************************************/
+/******* courtesy of Joy Shaheb********************/
+/******* https://codepen.io/joyshaheb/pen/gOwOGQE**/
+/**************************************************/
+
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.dark-light-cntr {
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+  align-self:center;
+  margin:15px 0;
+}
+
+
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 150px;
+  height: 75px;
+  background: #ffffff;
+  position:relative;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 1s ease;
+  overflow: hidden;
+}
+  
+  
+.ball{
+  width: 75px;
+  height: 75px;
+  background-color: rgb(200, 199, 204);
+  position:absolute;
+  border-radius:50%;
+  border: 3px solid grey;
+  transition: all 1s ease;
+}
+  
+  
+.scenery{
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px 0px 10px;
+  height: 3rem;
+}
+
+
+svg{
+  width: 35px;
+}
+  
+
